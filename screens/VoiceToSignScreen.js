@@ -11,7 +11,6 @@ export default function VoiceToSignScreen() {
   const [started, setStarted] = useState("");
   const [results, setResults] = useState([]);
   const [partialResults, setPartialResults] = useState([]);
-  // const [inputText, setInputText] = useState("");
   const [hasil, setHasil] = useState(null);
   const didMountRef = useRef(false);
 
