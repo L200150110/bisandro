@@ -20,6 +20,8 @@ target 'bisandro' do
 
   pod 'react-native-voice', :path => '../node_modules/@react-native-voice/voice'
 
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
   target 'bisandroTests' do
     inherit! :complete
     # Pods for testing

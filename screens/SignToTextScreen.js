@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 // import "@tensorflow/tfjs-react-native";
 import React, { useState, useEffect, useRef } from "react";
 
-// import { Camera } from "expo-camera";
+import { RNCamera } from "react-native-camera";
 
 export default function SignToTextScreen({ navigation }) {
   const camRef = useRef(null);

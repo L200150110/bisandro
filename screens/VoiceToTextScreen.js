@@ -11,7 +11,7 @@ import {
 
 import Voice from "@react-native-voice/voice";
 
-const VoiceToTextScreen = () => {
+export default function VoiceToTextScreen() {
   const [pitch, setPitch] = useState("");
   const [error, setError] = useState("");
   const [end, setEnd] = useState("");
@@ -174,9 +174,7 @@ const VoiceToTextScreen = () => {
       </View>
     </SafeAreaView>
   );
-};
-
-export default VoiceToTextScreen;
+}
 
 const styles = StyleSheet.create({
   container: {
