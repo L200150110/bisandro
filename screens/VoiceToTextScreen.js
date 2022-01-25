@@ -6,8 +6,7 @@ import {
   Text,
   View,
   Image,
-  TouchableHighlight,
-  ScrollView
+  TouchableHighlight
 } from "react-native";
 
 import Voice from "@react-native-voice/voice";
@@ -68,7 +67,7 @@ const VoiceToTextScreen = () => {
 
   const onSpeechVolumeChanged = e => {
     //Invoked when pitch that is recognized changed
-    console.log("onSpeechVolumeChanged: ", e);
+    // console.log("onSpeechVolumeChanged: ", e);
     setPitch(e.value);
   };
 
@@ -143,7 +142,7 @@ const VoiceToTextScreen = () => {
         </View>
         <Text style={styles.titleText}>Tekan Record untuk Memulai</Text>
         <Text style={styles.textStyle}>Results</Text>
-        <ScrollView style={{ marginBottom: 42 }}>
+        <View style={{ marginBottom: 42 }}>
           {results.map((result, index) => {
             return (
               <Text key={`result-${index}`} style={styles.textStyle}>
@@ -151,7 +150,7 @@ const VoiceToTextScreen = () => {
               </Text>
             );
           })}
-        </ScrollView>
+        </View>
         <View style={styles.horizontalView}>
           <TouchableHighlight
             onPress={stopRecognizing}
@@ -169,7 +168,7 @@ const VoiceToTextScreen = () => {
             onPress={destroyRecognizer}
             style={styles.buttonStyle}
           >
-            <Text style={styles.buttonTextStyle}>Destroy</Text>
+            <Text style={styles.buttonTextStyle}>Erase</Text>
           </TouchableHighlight>
         </View>
       </View>
@@ -193,6 +192,7 @@ const styles = StyleSheet.create({
   buttonStyle: {
     flex: 1,
     justifyContent: "center",
+    alignItems: "center",
     marginTop: 15,
     padding: 10,
     backgroundColor: "#8ad24e",
