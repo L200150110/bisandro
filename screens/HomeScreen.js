@@ -71,7 +71,7 @@ export default function HomeScreen({ navigation }) {
             icon={require("../assets/icon/sign-language.png")}
             title="Sign to Text"
             onPress={() => {
-              navigation.navigate("SignToText");
+              navigation.navigate("Sign To Text");
             }}
           />
         </View>
@@ -80,14 +80,14 @@ export default function HomeScreen({ navigation }) {
             icon={require("../assets/icon/voice-message.png")}
             title="Voice to Sign"
             onPress={() => {
-              navigation.navigate("VoiceToSign");
+              navigation.navigate("Voice To Sign");
             }}
           />
           <ItemCard
             icon={require("../assets/icon/122932.png")}
             title="Text to Sign"
             onPress={() => {
-              navigation.navigate("TextToSign");
+              navigation.navigate("Text To Sign");
             }}
           />
         </View>
@@ -96,7 +96,7 @@ export default function HomeScreen({ navigation }) {
             icon={require("../assets/icon/images.png")}
             title="Voice to Text"
             onPress={() => {
-              navigation.navigate("VoiceToText");
+              navigation.navigate("Voice To Text");
             }}
           />
           <ItemCard
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     marginBottom: 12.5
   },
   blockContainer: {
-    backgroundColor: "#92c5eb",
+    backgroundColor: "#f9b218",
     borderRadius: 15,
     width: "100%",
     alignItems: "center",

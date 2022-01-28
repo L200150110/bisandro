@@ -44,14 +44,14 @@ export default function ManualScreen({ navigation }) {
             icon={require("../assets/icon/icon-design-guide.png")}
             title="Dictionary"
             onPress={() => {
-              navigation.navigate("DetailManual", { data: data[0] });
+              navigation.navigate("Detail Manual", { data: data[0] });
             }}
           />
           <ItemCard
             icon={require("../assets/icon/sign-language.png")}
             title="Sign to Text"
             onPress={() => {
-              navigation.navigate("DetailManual", { data: data[1] });
+              navigation.navigate("Detail Manual", { data: data[1] });
             }}
           />
         </View>
@@ -60,14 +60,14 @@ export default function ManualScreen({ navigation }) {
             icon={require("../assets/icon/voice-message.png")}
             title="Voice to Sign"
             onPress={() => {
-              navigation.navigate("DetailManual", { data: data[2] });
+              navigation.navigate("Detail Manual", { data: data[2] });
             }}
           />
           <ItemCard
             icon={require("../assets/icon/122932.png")}
             title="Text to Sign"
             onPress={() => {
-              navigation.navigate("DetailManual", { data: data[4] });
+              navigation.navigate("Detail Manual", { data: data[4] });
             }}
           />
         </View>
@@ -76,14 +76,14 @@ export default function ManualScreen({ navigation }) {
             icon={require("../assets/icon/images.png")}
             title="Voice to Text"
             onPress={() => {
-              navigation.navigate("DetailManual", { data: data[3] });
+              navigation.navigate("Detail Manual", { data: data[3] });
             }}
           />
           <ItemCard
             icon={require("../assets/icon/about-us.jpg")}
             title="About Us"
             onPress={() => {
-              navigation.navigate("DetailManual", { data: about });
+              navigation.navigate("Detail Manual", { data: about });
             }}
           />
         </View>
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     marginBottom: 12.5
   },
   blockContainer: {
-    backgroundColor: "#92c5eb",
+    backgroundColor: "#f9b218",
     borderRadius: 15,
     width: "100%",
     alignItems: "center",

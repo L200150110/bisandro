@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     height: 70,
     top: 0,
     // width: "100%",
-    backgroundColor: "#92c5eb",
+    backgroundColor: "#f9b218",
     borderBottomRightRadius: 15,
     borderBottomLeftRadius: 15,
     flexDirection: "row",

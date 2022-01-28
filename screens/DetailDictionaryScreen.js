@@ -18,7 +18,7 @@ export default function DetailDictionaryScreen({ route, navigation }) {
                     icon={{ uri: imageLocation + item[0].gambar }}
                     title={item[0].nama}
                     onPress={() => {
-                      navigation.navigate("VideoDictionary", {
+                      navigation.navigate("Video Dictionary", {
                         title: item[0].nama,
                         videoUrl: videoLocation + item[0].video
                       });
@@ -28,7 +28,7 @@ export default function DetailDictionaryScreen({ route, navigation }) {
                     icon={{ uri: imageLocation + item[1].gambar }}
                     title={item[1].nama}
                     onPress={() => {
-                      navigation.navigate("VideoDictionary", {
+                      navigation.navigate("Video Dictionary", {
                         title: item[1].nama,
                         videoUrl: videoLocation + item[1].video
                       });
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     marginBottom: 12.5
   },
   blockContainer: {
-    backgroundColor: "#92c5eb",
+    backgroundColor: "#f9b218",
     borderRadius: 15,
     width: "100%",
     alignItems: "center",

@@ -24,25 +24,33 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerShown: false
+          // headerShown: false,
+          headerStyle: {
+            backgroundColor: "#f9b218"
+          },
+          headerTintColor: "#fff"
         }}
       >
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: "Rumah" }}
+        />
         <Stack.Screen name="Dictionary" component={DictionaryScreen} />
         <Stack.Screen
-          name="DetailDictionary"
+          name="Detail Dictionary"
           component={DetailDictionaryScreen}
         />
         <Stack.Screen
-          name="VideoDictionary"
+          name="Video Dictionary"
           component={VideoDictionaryScreen}
         />
-        <Stack.Screen name="SignToText" component={SignToTextScreen} />
-        <Stack.Screen name="VoiceToSign" component={VoiceToSignScreen} />
-        <Stack.Screen name="TextToSign" component={TextToSignScreen} />
-        <Stack.Screen name="VoiceToText" component={VoiceToTextScreen} />
+        <Stack.Screen name="Sign To Text" component={SignToTextScreen} />
+        <Stack.Screen name="Voice To Sign" component={VoiceToSignScreen} />
+        <Stack.Screen name="Text To Sign" component={TextToSignScreen} />
+        <Stack.Screen name="Voice To Text" component={VoiceToTextScreen} />
         <Stack.Screen name="Manual" component={ManualScreen} />
-        <Stack.Screen name="DetailManual" component={DetailManualScreen} />
+        <Stack.Screen name="Detail Manual" component={DetailManualScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -60,7 +60,7 @@ export default function DictionaryScreen({ route, navigation }) {
                     icon={{ uri: imageCategoryLocation + item[0].gambar }}
                     title={item[0].jenis}
                     onPress={() => {
-                      navigation.navigate("DetailDictionary", {
+                      navigation.navigate("Detail Dictionary", {
                         dataJenis: dataJenis[item[0].jenis],
                         imageLocation: imageLocation,
                         videoLocation: videoLocation
@@ -71,7 +71,7 @@ export default function DictionaryScreen({ route, navigation }) {
                     icon={{ uri: imageCategoryLocation + item[1].gambar }}
                     title={item[1].jenis}
                     onPress={() => {
-                      navigation.navigate("DetailDictionary", {
+                      navigation.navigate("Detail Dictionary", {
                         dataJenis: dataJenis[item[1].jenis],
                         imageLocation: imageLocation,
                         videoLocation: videoLocation
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     marginBottom: 12.5
   },
   blockContainer: {
-    backgroundColor: "#92c5eb",
+    backgroundColor: "#f9b218",
     borderRadius: 15,
     width: "100%",
     alignItems: "center",

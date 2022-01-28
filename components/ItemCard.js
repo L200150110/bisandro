@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
     height: Dimensions.get("screen").height / 3 - 50,
     width: Dimensions.get("screen").width / 2 - 50,
     margin: 12.5,
-    padding: 5
+    padding: 5,
+    backgroundColor: "#3d509e"
   },
   cardCover: {
     resizeMode: "stretch"
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   cardTitle: {
-    fontSize: 16
+    fontSize: 16,
+    color: "white"
   }
 });

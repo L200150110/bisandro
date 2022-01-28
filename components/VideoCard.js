@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
   },
   title: {
     marginTop: 10,
-    fontSize: 30
+    fontSize: 30,
+    color: "black"
   },
   video: {
     width: 300,

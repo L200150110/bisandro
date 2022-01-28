@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     padding: 12.5
   },
   blockContainer: {
-    backgroundColor: "#92c5eb",
+    backgroundColor: "#f9b218",
     borderRadius: 15,
     width: "100%",
     alignItems: "center",
