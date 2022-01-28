@@ -7,7 +7,7 @@ export default function ItemCard({ icon, title, ...rest }) {
     <Card style={styles.card} {...rest}>
       <Card.Cover style={styles.cardCover} source={icon} resizeMode="contain" />
       <Card.Content style={styles.cardContent}>
-        <Title>
+        <Title style={styles.cardTitle}>
           {title}
         </Title>
       </Card.Content>
@@ -27,5 +27,8 @@ const styles = StyleSheet.create({
   },
   cardContent: {
     alignItems: "center"
+  },
+  cardTitle: {
+    fontSize: 16
   }
 });
