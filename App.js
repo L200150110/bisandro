@@ -31,11 +31,7 @@ export default function App() {
           headerTintColor: "#fff"
         }}
       >
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: "Rumah" }}
-        />
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Dictionary" component={DictionaryScreen} />
         <Stack.Screen
           name="Detail Dictionary"

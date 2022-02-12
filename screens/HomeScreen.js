@@ -8,6 +8,7 @@ import {
   ScrollView
 } from "react-native";
 import ItemCard from "./../components/ItemCard";
+import Button from "./../components/Button";
 
 export default function HomeScreen({ navigation }) {
   const [category, setCategory] = useState(null);
@@ -56,57 +57,57 @@ export default function HomeScreen({ navigation }) {
         />
       </View>
       <View style={styles.blockContainer}>
-        <View style={styles.cardContainer}>
-          <ItemCard
-            icon={require("../assets/icon/icon-design-guide.png")}
-            title="Dictionary"
-            onPress={() => {
-              navigation.navigate("Dictionary", {
-                category: category,
-                imageCategoryLocation: imageCategoryLocation
-              });
-            }}
-          />
-          <ItemCard
-            icon={require("../assets/icon/sign-language.png")}
-            title="Sign to Text"
-            onPress={() => {
-              navigation.navigate("Sign To Text");
-            }}
-          />
-        </View>
-        <View style={styles.cardContainer}>
-          <ItemCard
-            icon={require("../assets/icon/voice-message.png")}
-            title="Voice to Sign"
-            onPress={() => {
-              navigation.navigate("Voice To Sign");
-            }}
-          />
-          <ItemCard
-            icon={require("../assets/icon/122932.png")}
-            title="Text to Sign"
-            onPress={() => {
-              navigation.navigate("Text To Sign");
-            }}
-          />
-        </View>
-        <View style={styles.cardContainer}>
-          <ItemCard
-            icon={require("../assets/icon/images.png")}
-            title="Voice to Text"
-            onPress={() => {
-              navigation.navigate("Voice To Text");
-            }}
-          />
-          <ItemCard
-            icon={require("../assets/icon/manual.png")}
-            title="Manual"
-            onPress={() => {
-              navigation.navigate("Manual");
-            }}
-          />
-        </View>
+        {/* <View style={styles.cardContainer}> */}
+        <Button
+          icon={require("../assets/icon/icon-design-guide.png")}
+          title="Dictionary"
+          onPress={() => {
+            navigation.navigate("Dictionary", {
+              category: category,
+              imageCategoryLocation: imageCategoryLocation
+            });
+          }}
+        />
+        <Button
+          icon={require("../assets/icon/sign-language.png")}
+          title="Sign to Text"
+          onPress={() => {
+            navigation.navigate("Sign To Text");
+          }}
+        />
+        {/* </View> */}
+        {/* <View style={styles.cardContainer}> */}
+        <Button
+          icon={require("../assets/icon/voice-message.png")}
+          title="Voice to Sign"
+          onPress={() => {
+            navigation.navigate("Voice To Sign");
+          }}
+        />
+        <Button
+          icon={require("../assets/icon/122932.png")}
+          title="Text to Sign"
+          onPress={() => {
+            navigation.navigate("Text To Sign");
+          }}
+        />
+        {/* </View> */}
+        {/* <View style={styles.cardContainer}> */}
+        <Button
+          icon={require("../assets/icon/images.png")}
+          title="Voice to Text"
+          onPress={() => {
+            navigation.navigate("Voice To Text");
+          }}
+        />
+        <Button
+          icon={require("../assets/icon/manual.png")}
+          title="Manual"
+          onPress={() => {
+            navigation.navigate("Manual");
+          }}
+        />
+        {/* </View> */}
       </View>
     </ScrollView>
   );
