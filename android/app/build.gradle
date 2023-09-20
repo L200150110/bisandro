@@ -156,6 +156,13 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        // ,
+        // release {
+        //     storeFile file('bisandro_key.keystore')
+        //     storePassword 'bisandro'
+        //     keyAlias 'bisandro'
+        //     keyPassword 'bisandro'
+        // }
     }
     buildTypes {
         debug {
